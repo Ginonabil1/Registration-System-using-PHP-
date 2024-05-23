@@ -1,0 +1,46 @@
+#register, #login-form{
+    padding: 2% 0;
+    background: url("imgs/background.png") no-repeat;
+    background-size: cover;
+}
+#login-form{
+    padding: 5% 0;
+}
+
+#Register .upload_img{
+    position: relative;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .8s ease;
+}
+#Register .upload_img:hover{
+    filter: drop-shadow(1px 1px 22px #75B4bb);
+}
+
+#upload_pr{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 200px;
+    margin-top: 0;
+    opacity: 0;
+}
+#upload_pr::before{
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#Register .upload_img .camera{
+    position: absolute;
+    top: 70px;
+    width: 60px;
+    filter: invert(30%);
+}
+#Register .upload_img:hover .camera{
+    filter: invert(100%);
+}
